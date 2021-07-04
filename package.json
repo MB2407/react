@@ -2,7 +2,7 @@
   "name": "mann-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://mb2407.github.io/mann-portfolio",
+  "homepage": "http://mb2407.github.io/react",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
