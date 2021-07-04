@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./components/Navbar.js";
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import "./App.css";
 import Header from "./components/Header";
 import Intro from "./components/intro/Intro";
@@ -18,7 +18,6 @@ function App() {
         <Navbar />
        <Router>        
        <Switch>
-            
             <Route exact path="/" component={Header} />
             <Route path="/intro" component={Intro} />
             <Route path="/portfolio" component={Portfolio} />
