@@ -13,19 +13,18 @@ body{
 .logo{
     width: 3.5rem;
     height: 3.5rem;
+    margin-top: 10px;
+    margin-right: 10px;
     border-radius: 0.75rem;
     border: 2px solid var(--primary-orange);
 }
- nav a.nav-link {
-     font-size: .8rem;
-     letter-spacing: 0.0375;
-     cursor: pointing;
- }
- nav ul li {
+ 
+ Nav.Item {
+     display: flex;
      text-transform: uppercase;
-     
+     cursor: pointer;
  }
- .navbar-nav > li > a{
+ .navbar-nav > Nav.Item {
      color: var(--primary-white) !important;
      margin-right: 0.75 rem;
      margin-left: 0.75 rem;
@@ -37,17 +36,29 @@ body{
      height: 6rem !important;
  }
 
- 
+ .nav-link{
+    color: var(--primary-white) !important;
+    margin-right: 0.75 rem;
+    margin-left: 0.75 rem;
+    font-size: .8rem;
+    letter-spacing: 0.0375;
+    cursor: pointing;
+    
+ }
+ .active:hover{
+    border-top: 0.1875rem solid var(#bf00ff);
+    border-bottom: 0.1875rem solid var(#bf00ff);
+ }
 
  @media(max-width: 768px){
      .navbar-brand{
          width: 7rem;
      }
  }
- .navbar-nav > li > a.active, .navbar-nav > li > a.active:focus{
+ .navbar-nav > li > Nav.Link.active, .navbar-nav > li > Nav.Link.active:focus{
      border-top: 0.1875rem solid var(--primary-orange);
  }
- .navbar-nav > li > a:hover {
+Nav.Item:hover {
      border-top: 0.1875rem solid var(--primary-orange);
  }
  .header-wrapper{
@@ -61,6 +72,7 @@ body{
  p{
      float:right;
      text-align: right;
+     z-index: ;
  }
  .main-info{
     display: flex;
@@ -97,6 +109,19 @@ body{
      margin: 2rem;
 
  }
+ h3{
+    color: #bf00ff;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
+    line-height: 0.70em;
+    outline: none;
+    animation: animate 10s linear infinite;
+    transition-duration: 1000s ;
+}
+
+
  
  h1{
      color: #bf00ff;
@@ -117,7 +142,7 @@ body{
     }
     18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%
     {
-        color:#fff;
+        color:#fff ;
         text-shadow: 0 0 10px #ff80ff,
         0 0 20px #ff80ff,
         0 0 40px #ff80ff,
@@ -134,11 +159,31 @@ body{
      transition: .2s ease-in-out;
  }
 
- @media(max-width: 768px) {
+ @media only screen and (max-width: 768px) {
+     .section-container{
+         padding: 100px 0;
+         
+     }
      .main-info h1{
          font-size: 1.5rem !important;
      }
      .typed-text{
          font-size: 1.3rem !important;
      }
+ }
+ input:focus,
+ text-area:focus,
+ select:focus{
+     outline: none;
+ }
+ .section-container{
+     box-sizing: border-box;
+     min-height: 100vh;
+     position: relative;
+     padding: 50px 0;
+     display:flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     align-content: center;
  }
