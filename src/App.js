@@ -16,7 +16,7 @@ function App() {
         <div className="app">
         <React.Fragment>
         <Navbar />
-       <Router>        
+       <Router basename={process.env.PUBLIC_URL}>        
        <Switch>
             <Route exact path="/" component={Header} />
             <Route path="/intro" component={Intro} />
