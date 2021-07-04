@@ -1,0 +1,60 @@
+.landing-grid{
+text-align: center;
+height: 100vh;
+position:relative;
+left: 0;
+width: 100vw;
+}
+.section-container{
+    background: #FF0099;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #29035c, #040005);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #360366, #1a011d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+.avatar-img {
+    height: 250px;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+.banner-text {
+    top: 80px;
+    left:50px;
+    background-color: black;
+    opacity: .75;
+    width: 75%;
+    height: 170px;
+    margin:auto;
+    border-radius: 8px;
+}
+
+.banner-text h2 {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+}
+.banner-text hr{
+    border-top: 8px dotted white;
+    width: 50%;
+    margin:auto;
+}
+
+.banner-text p{
+    color:white;
+    font-size: 15px;
+    padding: 1em;
+}
+.social-links {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: auto;
+    bottom: 5px;
+  }
+  
+  .social-links i {
+    color: white;
+    font-size: 3em;
+    padding: 5px;
+  }
+  

@@ -1,0 +1,18 @@
+.footer-link {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 20px;
+    text-align: center;
+    line-break: normal;
+    letter-spacing: -0.015em;
+    color: rgb(217, 146, 245) ;
+}
+
+.footer-link-element {
+    color: rgb(217, 146, 245);
+}
+Link:hover{
+    border-top: 2px;
+
+}
